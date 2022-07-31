@@ -1,0 +1,162 @@
+import time
+print("welcome to my adventure game")
+print("you are walking your pet through the San Diego Zoo and the power goes out, you two are now on your own.")
+time.sleep(3)
+while True:
+  print("you only carry one item: night vision goggles, a tent, or a bike")
+  item = input("which do you choose(g, t, b)")
+  time.sleep(2)
+  print("nice choice, that will be helpful")
+  time.sleep(2)
+  if item == "b":
+    print("an animal darts in front you when you are riding your bike")
+    hopee = input("do you pack the swerve out of the way (s) or keep moving forward (f) ")
+    if hopee == "f":
+      time.sleep(2)
+      print("you fall into the mouth of a tiger. Trya again bike was not the correct choice")
+    if hopee == "s":
+      time.sleep(2)
+      print("you go into the wilderness")
+      print("Unfortunately, your tire pops on a rock, alerting predators")
+      tryy = input("do you run (r) or keep riding the bike (b) ")
+      if tryy == "r":
+        time.sleep(2)
+        print("the animals catch you. Try again, the bike was not a good choice. ")
+      if tryy == "b": 
+        time.sleep(2)
+        print("You fall off and get eaten. Try again, the bike was not a good choice. ")
+    if hopee == "p":
+      time.sleep(2)
+      print("The lion finds you packing and eats you, luckily your pet got away. The tent was not a good choice, try again")
+  if item == "t":
+    time.sleep(2)
+    print("while setting up your tent, you hear a mysterious sound")
+    time.sleep(2)
+    hopee = input("do you pack the tent (p) or run (r) ")
+    if hopee == "r":
+      time.sleep(2)
+      print("you think you got away")
+      print("Unfortunately, the animal finds you defenseless an hour later. The  tent was not a good choice, try again")
+    if hopee == "p":
+      time.sleep(2)
+      print("The lion finds you packing and eats you, luckily your pet got away. The  tent was not a good choice, try again")
+  if item == "g":
+    print("your goggles allow you to see a mysterious shape about 800 feet away")
+    while True:
+      time.sleep(2)
+      hope = input("your pet starts to run, do you follow (y) or (n) ")
+      if hope == "n":
+        time.sleep(2)
+        print("never abandon your animal")
+      elif hope == "no":
+        time.sleep(2)
+        print("never abandon your animal")
+      if hope == "y":
+        time.sleep(2)
+        print("It was smart to trust your animal, the lion lost your track")
+        break
+      elif hope == "yes":
+        time.sleep(2)
+        print("It was smart to trust your animal, the lion lost your track")
+        break
+      #else:
+        #print("try again")
+    break
+time.sleep(2)
+print("wow, your pet is smart and fast")
+animal = input("is it a cat or dog (type out c or d) ")
+if animal == "d":
+  agee = int(input("how many years old is your dog (e.g. 5) "))
+  if agee == 0:
+    time.sleep(2)
+    print("the dog's human age is 0")
+  elif agee == 1:
+    time.sleep(2)
+    print("the dog's human age is 12")
+  elif agee == 2:
+    time.sleep(2)
+    print("the dog's human age is 24")
+  elif agee > 2:
+    time.sleep(2)
+    human = 24 + (agee-2)*4
+    humannn = str(human)
+    print("the dog is very wise, it's human age is " + humannn)
+if animal == "c":
+  agee = int(input("how many years old is your cat (e.g. 5) "))
+  if agee == 0:
+    time.sleep(2)
+    print("the cat's human age is 0")
+  elif agee == 1:
+    time.sleep(2)
+    print("the cat's human age is 15")
+  elif agee == 2:
+    time.sleep(2)
+    print("the cat's human age is 24")
+  elif agee > 2:
+    time.sleep(2)
+    humannn = 24 + (agee-2)*4
+    print("the cat is very wise, it's human age is " + humannn)
+print("Your pet is very dependable")
+while True:
+  direction = input("You see sirens and humans north, but also animals, do you go north(n) or south(s) ")
+  if direction == "s":
+    print("You are hunted down, try again. ")
+  else:
+    break
+if direction == "n":
+  while True:
+    suree = input("your night vision goggles show you there are many animals this way. Are you sure you want to proceed (y or n) ")
+    if suree == "y":
+      print("you have arrived at the human gate")
+      break
+    elif suree == "yes":
+      print("you have arrived at the human gate")
+      break
+    if suree == "n":
+      print("trust your instincts, try again. ")
+    elif suree == "no":
+      print("trust your instincts, try again. ")
+print("at the human gate, the guard asks for the code")
+print("what is your pets age in human years ")
+#password is game
+while True:
+  x = input("please enter the password ")
+  time.sleep(2)
+  if x == humannn:
+    break 
+  else:
+    time.sleep(2)
+    print("that is incorrect")
+print("That is correct")
+print("The guard opens the gate for you")
+print("Congratulations, you have survived with your pet!")
+print("Here is your trophy:")
+print("V for Victory!")
+time.sleep(2)
+
+import turtle
+greeny = turtle
+
+for x in range(7):
+    greeny.forward(100)
+    greeny.right(144)
+greeny.right(72)
+greeny.forward(63)
+greeny.right(90)
+greeny.forward(200)
+greeny.right(90)
+greeny.forward(63)
+greeny.right(90)
+greeny.forward(200)
+greeny.penup()
+greeny.forward(300)
+greeny.right(180)
+# greeny.forward(10)
+# greeny.right(90)
+greeny.forward(50)
+greeny.left(30)
+greeny.pendown()
+greeny.forward(50)
+greeny.right(240)
+greeny.forward(50)
+greeny.hideturtle()
