@@ -1,0 +1,8 @@
+Humna:hello
+Bot:Hello!
+Human:how are you?
+Bot:I am doing fine, and you?
+Human:I'm also good.
+Bot: That's good to hear.
+Human: Yes it is.
+
